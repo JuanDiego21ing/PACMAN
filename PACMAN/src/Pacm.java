@@ -25,7 +25,7 @@ public class Pacm {
 	JPanel tablero = new JPanel();
 
 	/**
-	 * Launch the application.
+	 * Launch the application. prueba
 	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
