@@ -22,7 +22,7 @@ public class Pacm {
 	public element pacman = new element(pacx, pacy, 30, 30,Color.YELLOW);
 	public element pared = new element(20, 20, 190, 10,Color.decode("#3339FF"));
 	public element pared1 = new element(30, 20, 10, 430,Color.decode("#3339FF"));
-	public element pared2 = new element(30, 400, 10, 430,Color.decode("#3339FF"));
+	public element pared2 = new element(30, 400, 10, 430,Color.CYAN);
 	public element pared3 = new element(30, 200, 10, 80,Color.decode("#3339FF"));
 	public element pared4 = new element(30, 260, 10, 80,Color.decode("#3339FF"));
 	public element pared5 = new element(20, 260, 150, 10,Color.decode("#3339FF"));
@@ -114,6 +114,37 @@ public class Pacm {
 		            		
 		            	
 		            }
+				 
+				 if(pacman.chocar(pared1)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==65) {
+					pacman.x += speed;
+				}	
+		            		
+		            	
+		            }
+				 
+				 if(pacman.chocar(pared2)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==83) {
+					pacman.y -= speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==68) {
+					pacman.x -= speed;
+				}	
+		            		
+		            	
+		            }
+				 
 				
 				
 				tablero.repaint();
@@ -259,7 +290,18 @@ public class Pacm {
 	 		
 	 		public boolean chocar(element e) {
 	 			
-	 			
+	 			if(this.x < e.x + e.w &&
+	 			   this.x + this.w > e.x &&
+	 			   
+	 			  this.y < e.y + e.h &&
+	 			  this.y + this.h > + e.y) {
+	 				return true;
+	 			}else {
+	 		
+	 		return false;
+	 			}
+	 	}
+	public boolean chocar1(element e) {
 	 			
 	 			if(this.x < e.x + e.w &&
 	 			   this.x + this.w > e.x &&
