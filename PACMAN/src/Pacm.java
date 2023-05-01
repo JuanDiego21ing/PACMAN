@@ -30,7 +30,18 @@ public class Pacm {
 	public element pared7 = new element(380, 200, 10, 80,Color.decode("#3339FF"));
 	public element pared8 = new element(450, 260, 140, 10,Color.decode("#3339FF"));
 	public element pared9 = new element(380, 250, 10, 80,Color.decode("#3339FF"));
+	
 	//PAREDES DENTRO
+	public element pared10 = new element(90, 330, 10, 300,Color.decode("#3339FF"));
+	public element pared11 = new element(90, 130, 10, 120,Color.decode("#3339FF"));
+	public element pared12 = new element(90, 80, 10, 120,Color.decode("#3339FF"));
+	public element pared13 = new element(80, 80, 60, 10,Color.decode("#3339FF"));
+	public element pared14 = new element(210, 80, 60, 10,Color.decode("#3339FF"));
+	public element pared15 = new element(270, 130, 10, 120,Color.decode("#3339FF"));
+	public element pared16 = new element(270, 80, 10, 120,Color.decode("#3339FF"));
+	public element pared17 = new element(260, 80, 60, 10,Color.decode("#3339FF"));
+	public element pared18 = new element(380, 80, 60, 10,Color.decode("#3339FF"));
+	
 	JPanel tablero = new JPanel();
 
 	/**
@@ -188,6 +199,42 @@ public class Pacm {
 	            //PARED9
 	            g.setColor(pared9.c);
 	            g.fillRect(pared9.x, pared9.y, pared9.w, pared9.h);
+	            
+	            //PARED10
+	            g.setColor(pared10.c);
+	            g.fillRect(pared10.x, pared10.y, pared10.w, pared10.h);
+	            
+	            //PARED11
+	            g.setColor(pared11.c);
+	            g.fillRect(pared11.x, pared11.y, pared11.w, pared11.h);
+	            
+	            //PARED12
+	            g.setColor(pared12.c);
+	            g.fillRect(pared12.x, pared12.y, pared12.w, pared12.h);
+	            
+	            //PARED13
+	            g.setColor(pared13.c);
+	            g.fillRect(pared13.x, pared13.y, pared13.w, pared13.h);
+	            
+	            //PARED14
+	            g.setColor(pared14.c);
+	            g.fillRect(pared14.x, pared14.y, pared14.w, pared14.h);
+	            
+	            //PARED15
+	            g.setColor(pared15.c);
+	            g.fillRect(pared15.x, pared15.y, pared15.w, pared15.h);
+	            
+	            //PARED16
+	            g.setColor(pared16.c);
+	            g.fillRect(pared16.x, pared16.y, pared16.w, pared16.h);
+	            
+	            //PARED17
+	            g.setColor(pared17.c);
+	            g.fillRect(pared17.x, pared17.y, pared17.w, pared17.h);
+	            
+	            //PARED18
+	            g.setColor(pared18.c);
+	            g.fillRect(pared18.x, pared18.y, pared18.w, pared18.h);
 	            
 	            if(pacman.chocar(pared)) {
 	            	System.out.println("hola");
