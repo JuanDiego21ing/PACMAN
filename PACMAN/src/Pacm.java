@@ -20,27 +20,27 @@ public class Pacm {
 	public int speed=10;
 	//PAREDES CONTORNO
 	public element pacman = new element(pacx, pacy, 30, 30,Color.YELLOW);
-	public element pared = new element(20, 20, 190, 10,Color.decode("#3339FF"));
-	public element pared1 = new element(30, 20, 10, 430,Color.decode("#3339FF"));
-	public element pared2 = new element(30, 400, 10, 430,Color.CYAN);
-	public element pared3 = new element(30, 200, 10, 80,Color.decode("#3339FF"));
-	public element pared4 = new element(30, 260, 10, 80,Color.decode("#3339FF"));
-	public element pared5 = new element(20, 260, 150, 10,Color.decode("#3339FF"));
-	public element pared6 = new element(450, 20, 190, 10,Color.decode("#3339FF"));
-	public element pared7 = new element(380, 200, 10, 80,Color.decode("#3339FF"));
-	public element pared8 = new element(450, 260, 140, 10,Color.decode("#3339FF"));
-	public element pared9 = new element(380, 250, 10, 80,Color.decode("#3339FF"));
+	public element pared = new element(20, 20, 190, 10,Color.decode("#3339FF"));//
+	public element pared1 = new element(30, 20, 10, 430,Color.decode("#3339FF"));//
+	public element pared2 = new element(30, 400, 10, 430,Color.decode("#3339FF"));//
+	public element pared3 = new element(30, 200, 10, 80,Color.decode("#3339FF"));//
+	public element pared4 = new element(30, 260, 10, 80,Color.decode("#3339FF"));//
+	public element pared5 = new element(20, 260, 150, 10,Color.decode("#3339FF"));//
+	public element pared6 = new element(450, 20, 190, 10,Color.decode("#3339FF"));//
+	public element pared7 = new element(380, 200, 10, 80,Color.decode("#3339FF"));//
+	public element pared8 = new element(450, 260, 140, 10,Color.decode("#3339FF"));//
+	public element pared9 = new element(380, 250, 10, 80,Color.decode("#3339FF"));//
 	
 	//PAREDES DENTRO
-	public element pared10 = new element(90, 330, 10, 300,Color.decode("#3339FF"));
-	public element pared11 = new element(90, 130, 10, 120,Color.decode("#3339FF"));
-	public element pared12 = new element(90, 80, 10, 120,Color.decode("#3339FF"));
-	public element pared13 = new element(80, 80, 60, 10,Color.decode("#3339FF"));
-	public element pared14 = new element(210, 80, 60, 10,Color.decode("#3339FF"));
-	public element pared15 = new element(270, 130, 10, 120,Color.decode("#3339FF"));
-	public element pared16 = new element(270, 80, 10, 120,Color.decode("#3339FF"));
-	public element pared17 = new element(260, 80, 60, 10,Color.decode("#3339FF"));
-	public element pared18 = new element(380, 80, 60, 10,Color.decode("#3339FF"));
+	public element pared10 = new element(90, 330, 10, 300,Color.decode("#3339FF"));//
+	public element pared11 = new element(90, 130, 10, 120,Color.decode("#3339FF"));//
+	public element pared12 = new element(90, 80, 10, 120,Color.decode("#3339FF"));//
+	public element pared13 = new element(80, 80, 60, 10,Color.decode("#3339FF"));//
+	public element pared14 = new element(210, 80, 60, 10,Color.decode("#3339FF"));//
+	public element pared15 = new element(270, 130, 10, 120,Color.decode("#3339FF"));//
+	public element pared16 = new element(270, 80, 10, 120,Color.decode("#3339FF"));//
+	public element pared17 = new element(260, 80, 60, 10,Color.decode("#3339FF"));//
+	public element pared18 = new element(380, 80, 60, 10,Color.decode("#3339FF"));//
 	
 	JPanel tablero = new JPanel();
 
@@ -143,6 +143,248 @@ public class Pacm {
 				}	
 		            		
 		            	
+		            }
+				 
+				 if(pacman.chocar(pared3)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==83) {
+					pacman.y -= speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}	
+		            		
+		             		if(e.getKeyCode()==65) {
+		    					pacman.x += speed;
+		    				}
+		            		
+		            	
+		            }
+				 
+				 if(pacman.chocar(pared4)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==83) {
+					pacman.y -= speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}	
+		            		
+		             		if(e.getKeyCode()==65) {
+		    					pacman.x += speed;
+		    				}
+		            		
+		            	
+		            }
+				 
+				 if(pacman.chocar(pared5)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==65) {
+					pacman.x += speed;
+				}	
+		            		
+		            	
+		            }
+				 
+				 if(pacman.chocar(pared6)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==68) {
+					pacman.x -= speed;
+				}	
+		            		
+		            	
+		            }
+				 
+				 if(pacman.chocar(pared7)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==83) {
+					pacman.y -= speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}	
+		            		
+		             		if(e.getKeyCode()==68) {
+		    					pacman.x -= speed;
+		    				}
+		            		
+		            	
+		            }
+				 
+				 if(pacman.chocar(pared8)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==83) {
+					pacman.y -= speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==68) {
+					pacman.x -= speed;
+				}	
+		            		
+		            	
+		            }
+				 
+				 if(pacman.chocar(pared9)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==83) {
+					pacman.y -= speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}	
+		            		
+		             		if(e.getKeyCode()==68) {
+		    					pacman.x -= speed;
+		    				}
+		            		
+		            	
+		            }
+				 
+				 //COLISIONES PAREDES DE ADENTRO
+				 
+				 if(pacman.chocar(pared10)) {
+		            	System.out.println("hola");
+		            	
+		            		if(e.getKeyCode()==83) {
+					pacman.y -= speed;
+				}
+		            	
+		            		
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}	
+		            		
+		             		if(e.getKeyCode()==68) {
+		    					pacman.x -= speed;
+		    				}
+		             		
+		             		if(e.getKeyCode()==65) {
+		    					pacman.x += speed;
+		    				}
+		            		
+		            	
+		            }
+				 
+				 if(pacman.chocar(pared11)) {
+		            	System.out.println("hola");
+		            	    		
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}	
+		          
+		            }
+				 
+				 if(pacman.chocar(pared12)) {
+		            	System.out.println("hola");
+		            	    		
+		            		if(e.getKeyCode()==83) {
+					pacman.y -= speed;
+				}	
+		          
+		            }
+				 
+				 if(pacman.chocar(pared13)) {
+		            	System.out.println("hola");
+		            	    		
+		            		if(e.getKeyCode()==68) {
+		            			pacman.x -= speed;
+		            		}
+		               		if(e.getKeyCode()==87) {
+		    					pacman.y += speed;
+		    				}
+		               		if(e.getKeyCode()==83) {
+		    					pacman.y -= speed;
+		    				}
+		          
+		            }
+				 
+				 if(pacman.chocar(pared14)) {
+		            	System.out.println("hola");
+		            	    		
+		            		if(e.getKeyCode()==65) {
+		            			pacman.x += speed;
+		            		}
+		               		if(e.getKeyCode()==87) {
+		    					pacman.y += speed;
+		    				}
+		               		if(e.getKeyCode()==83) {
+		    					pacman.y -= speed;
+		    				}
+		          
+		            }
+				 
+				 if(pacman.chocar(pared15)) {
+		            	System.out.println("hola");
+		            	    		
+		            		if(e.getKeyCode()==87) {
+					pacman.y += speed;
+				}	
+		          
+		            }
+				 
+				 if(pacman.chocar(pared16)) {
+		            	System.out.println("hola");
+		            	    		
+		            		if(e.getKeyCode()==83) {
+					pacman.y -= speed;
+				}	
+		          
+		            }
+				 
+				 if(pacman.chocar(pared17)) {
+		            	System.out.println("hola");
+		            	    		
+		            		if(e.getKeyCode()==68) {
+		            			pacman.x -= speed;
+		            		}
+		               		if(e.getKeyCode()==87) {
+		    					pacman.y += speed;
+		    				}
+		               		if(e.getKeyCode()==83) {
+		    					pacman.y -= speed;
+		    				}
+		          
+		            }
+				 
+				 if(pacman.chocar(pared18)) {
+		            	System.out.println("hola");
+		            	    		
+		            		if(e.getKeyCode()==65) {
+		            			pacman.x += speed;
+		            		}
+		               		if(e.getKeyCode()==87) {
+		    					pacman.y += speed;
+		    				}
+		               		if(e.getKeyCode()==83) {
+		    					pacman.y -= speed;
+		    				}
+		          
 		            }
 				 
 				
